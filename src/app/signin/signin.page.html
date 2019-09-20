@@ -1,0 +1,39 @@
+<ion-header>
+    <ion-toolbar mode="ios">
+
+    </ion-toolbar>
+</ion-header>
+
+<ion-content color="danger">
+    <ion-item color="danger">
+        <div style="margin: auto;" text-center>
+            <ion-icon name="logo-rss" class="logo" color="light"></ion-icon>
+
+        </div>
+    </ion-item>
+    <ion-item lines="none" color="danger">
+        <h1 style="margin: auto;">feedly</h1>
+
+
+    </ion-item>
+    <ion-item text-center lines="none" color="danger">
+        <h6>an app for continuos feed</h6>
+    </ion-item>
+    <br><br>
+    <ion-grid style="width: 75%;">
+        <ion-row class="rowStyle">
+            <ion-icon name="person" color="danger"></ion-icon>
+            <ion-input type="text" placeholder="Your Username"></ion-input>
+        </ion-row>
+        <ion-row class="rowStyle">
+            <ion-icon color="danger" name="mail"></ion-icon>
+            <ion-input type="email" placeholder="Your email"></ion-input>
+        </ion-row>
+        <ion-row class="rowStyle">
+            <ion-icon name="key" color="danger"></ion-icon>
+            <ion-input type="password" placeholder="Your password"></ion-input>
+        </ion-row>
+        <ion-button shape="round" expand="block" color="light" fill="outline">SignIn</ion-button>
+        <ion-button (click)="navegar('login')" shape="round" expand="block" color="light" fill="clear">Already have a account? Log in</ion-button>
+    </ion-grid>
+</ion-content>
