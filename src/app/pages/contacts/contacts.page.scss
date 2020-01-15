@@ -1,0 +1,31 @@
+@media(min-width:100px) {
+    .flexibilidad {
+        display: inline-block;
+    }
+    .top_video {
+        width: 100%;
+    }
+}
+
+@media(min-width:600px) {
+    .top_video {
+        width: 75%;
+    }
+}
+
+@media(min-width:1000px) {
+    .flexibilidad {
+        display: flex;
+    }
+}
+
+.rowStyle {
+    border: 1.5px solid #a90066;
+    color: #000000;
+    padding-left: 10px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    ion-icon {
+        margin: auto 5px;
+    }
+}

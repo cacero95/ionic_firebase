@@ -1,0 +1,43 @@
+<ion-header translucent>
+    <ion-toolbar mode="ios">
+        <ion-buttons slot="start">
+            <!--
+                <ion-button (click)="create_modal()">
+                <ion-icon color="tertiary" name="mail"></ion-icon>
+            </ion-button>
+            -->
+        </ion-buttons>
+        <ion-title padding>
+            <div style="margin-top:10px;">
+                <img width="150px" src="assets/img/ibdnet.png" alt="ibdnet">
+
+            </div>
+        </ion-title>
+        <ion-buttons slot="end">
+            <ion-button>
+                <ion-icon color="tertiary" name="person"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+    <ion-toolbar mode="ios">
+        <ion-searchbar mode="ios" palceholder="Buscar..." style="border-radius: 20px;"></ion-searchbar>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="cuerpo" padding>
+    <div style="margin-bottom: 40px;" text-center>
+        <iframe style="border-radius: 20px;" class="top_video" height="415" frameborder="1" allow="autoplay; encrypted-media" allowfullscreen src="https://players.brightcove.net/2574028764001/SykGTiz2b_default/index.html?videoId=6033396295001#t=90" frameborder="0"></iframe></div>
+    <ion-list>
+        <ion-item routerLink="/home" class="cuerpo" *ngFor="let item of [1,2,3,4,5,6,7,8,9]">
+            <div class="flexibilidad">
+                <iframe style="margin:20px 0 20px 0;" height="200px" width="100%" src="https://www.youtube.com/embed/GXtD05hIRCM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div padding>
+                    <h2>Title</h2>
+                    <p><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam alias sequi, minus numquam aperiam ipsam, atque deserunt eveniet porro incidunt, nam sed quam veritatis voluptates soluta libero ullam! Eaque, dolores!</small></p>
+                </div>
+
+            </div>
+
+        </ion-item>
+    </ion-list>
+</ion-content>

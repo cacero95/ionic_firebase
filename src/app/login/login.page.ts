@@ -16,4 +16,8 @@ export class LoginPage implements OnInit {
   {
     this.router.navigate([`/${url}`])
   }
+
+  entrar(){
+    this.router.navigate([`/contacts`]);
+  }
 }

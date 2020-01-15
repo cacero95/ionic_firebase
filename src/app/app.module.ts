@@ -8,10 +8,12 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { NotificacionesComponent } from './components/notificaciones/notificaciones.component';
+import { UploadComponent } from './components/upload/upload.component';
 
 @NgModule({
-  declarations: [AppComponent],
-  entryComponents: [],
+  declarations: [AppComponent,NotificacionesComponent, UploadComponent],
+  entryComponents: [NotificacionesComponent, UploadComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
     StatusBar,

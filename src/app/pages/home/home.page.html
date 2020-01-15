@@ -1,0 +1,43 @@
+<ion-header>
+    <ion-toolbar mode="ios">
+        <ion-buttons>
+            <ion-button (click)="navegar('contacts')" slot="end">
+                <ion-icon mode="md" color="tertiary" name="arrow-round-back"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-title>
+            <div style="margin-top:10px;">
+                <img width="150px" src="assets/img/ibdnet.png" alt="ibdnet">
+
+            </div>
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-grid>
+        <ion-row class="rowStyle">
+            <ion-input type="text" placeholder="Comentar..."></ion-input>
+            <ion-icon color="tertiary" name="send" mode="md"></ion-icon>
+        </ion-row>
+    </ion-grid>
+    <ion-card *ngFor="let item of [1,2,3,4]">
+        <ion-card-header class="cuerpo">
+            <ion-card-subtitle color="light" text-center>Doctor. %%name%%</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+            <br>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, animi possimus. Ad recusandae, magni omnis debitis beatae dignissimos assumenda illum esse voluptatum architecto error provident pariatur officiis quia deleniti id!
+            </p>
+            <br>
+            <ion-row>
+                <ion-col text-right>
+                    <ion-button size="small" fill="clear">
+                        Hace unos segundos
+                    </ion-button>
+                </ion-col>
+            </ion-row>
+        </ion-card-content>
+    </ion-card>
+</ion-content>
